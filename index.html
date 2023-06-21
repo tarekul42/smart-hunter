@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Phone Hunter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+
+  <style>
+    #spinner{
+      height: 80vh;
+      /* border: 1px solid red; */
+      text-align: center;
+      padding-top: 25%;
+    }
+    #noFound{
+      height: 80vh;
+      /* border: 1px solid red; */
+      text-align: center;
+      padding-top: 25%;
+    }
+  </style>
+  </head>
+  <body>
+    <header>
+      <section class="text-center">
+        <h1>Welcome to my phone hunter</h1>
+      </section>
+    </header>
+    <!-- main section is here -->
+    <main>
+      <!-- modal checking -->
+      <div class="modal fade" id="phone-description" tabindex="-1" aria-labelledby="phone-descriptionLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="phone-descriptionLabel">Phone Description</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+            <!-- Modal body content goes here -->
+            <!-- <div class="card-img-top">
+              <img src="" alt="image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title py-4"></h5>
+              <p class="card-text px-4">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div> -->
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section one is here, all cards -->
+      <section class="container">
+        <!-- search button -->
+        <div class="input-group mb-3 w-auto px-12">
+          <input
+            type="text"
+            id="search-phone"
+            class="form-control"
+            placeholder="Search your phone"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            Search
+          </button>
+        </div>
+
+
+        <div id="phones" class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- add modal -->
+          <!-- Button trigger modal -->
+
+          <!-- Modal -->
+          <!-- <div
+            class="modal fade"
+            id="phone-description"
+            tabindex="-1"
+            aria-labelledby="phone-descriptionLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="phone-descriptionLabel">
+                    Modal title
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div id="modal-body" class="modal-body"></div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+<!-- chatgpt -->
+
+
+        </div>
+        <!-- spinner is added here -->
+        <!-- spinner-border text-light -->
+        <!-- <section  class="d-flex"> -->
+          <!-- d-flex justify-content-center align-items-center -->
+
+          <div  id="spinner" class="d-none">
+            <div id="spinner-display" class="spinner-border text-info" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        <!-- </section> -->
+        <!-- no found messege -->
+        <div id="noFound" class="d-none">
+          
+            <span class="text-danger fs-1">Sorry. This product is not available!</span>
+          
+        </div>
+
+      </section>
+    </main>
+
+    <!-- bootstrap js file -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- my js  code is here -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
